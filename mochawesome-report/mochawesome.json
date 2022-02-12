@@ -2,14 +2,14 @@
   "stats": {
     "suites": 2,
     "tests": 2,
-    "passes": 2,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2022-02-12T09:53:31.973Z",
-    "end": "2022-02-12T09:53:31.985Z",
-    "duration": 12,
+    "failures": 2,
+    "start": "2022-02-12T10:02:29.677Z",
+    "end": "2022-02-12T10:02:29.684Z",
+    "duration": 7,
     "testsRegistered": 2,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c292765a-26a4-4df6-8b1f-cb8902d97bf9",
+      "uuid": "7bb015b4-04ef-4089-9e04-7341606a2a06",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5754cb03-a80e-4e42-9e10-fe934b99be54",
+          "uuid": "87263e00-c203-491c-9271-5482ada71d6a",
           "title": "test 1 ordena noms",
           "fullFile": "/home/knna/examenPPS/PPS_examen_js/test/examen.spec.js",
           "file": "/test/examen.spec.js",
@@ -38,35 +38,39 @@
               "title": "case 01",
               "fullTitle": "test 1 ordena noms case 01",
               "timedOut": false,
-              "duration": 2,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 3,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "expect(o1.ordena_noms(students)).to.eql(ordenaNoms);",
-              "err": {},
-              "uuid": "bab27f87-8e5c-4ff8-b67a-2812e229208b",
-              "parentUUID": "5754cb03-a80e-4e42-9e10-fe934b99be54",
+              "err": {
+                "message": "AssertionError: expected undefined to deeply equal [ { alumne: 'Juan Gris', …(1) }, …(5) ]",
+                "estack": "AssertionError: expected undefined to deeply equal [ { alumne: 'Juan Gris', …(1) }, …(5) ]\n    at Context.it (test/examen.spec.js:40:41)",
+                "diff": null
+              },
+              "uuid": "ef2727bf-cb2c-4879-9751-609d2f2415fa",
+              "parentUUID": "87263e00-c203-491c-9271-5482ada71d6a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "bab27f87-8e5c-4ff8-b67a-2812e229208b"
+          "passes": [],
+          "failures": [
+            "ef2727bf-cb2c-4879-9751-609d2f2415fa"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 3,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "6dcfed94-20d1-4db2-b5dc-1754109e79df",
+          "uuid": "a594dfc0-f7d7-40e5-bf76-7d55d380b418",
           "title": "Test 2 ordena dates",
           "fullFile": "/home/knna/examenPPS/PPS_examen_js/test/examen.spec.js",
           "file": "/test/examen.spec.js",
@@ -77,29 +81,33 @@
               "title": "case 02",
               "fullTitle": "Test 2 ordena dates case 02",
               "timedOut": false,
-              "duration": 4,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "expect(o2.ordena_dates(students)).to.eql(ordenaDates);",
-              "err": {},
-              "uuid": "31f40b52-5db9-493d-acd4-f7c0a63c4deb",
-              "parentUUID": "6dcfed94-20d1-4db2-b5dc-1754109e79df",
+              "err": {
+                "message": "AssertionError: expected undefined to deeply equal [ Array(6) ]",
+                "estack": "AssertionError: expected undefined to deeply equal [ Array(6) ]\n    at Context.it (test/examen.spec.js:46:42)",
+                "diff": null
+              },
+              "uuid": "09026d97-3034-4b22-986e-58466227424b",
+              "parentUUID": "a594dfc0-f7d7-40e5-bf76-7d55d380b418",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "31f40b52-5db9-493d-acd4-f7c0a63c4deb"
+          "passes": [],
+          "failures": [
+            "09026d97-3034-4b22-986e-58466227424b"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
